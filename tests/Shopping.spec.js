@@ -6,12 +6,11 @@ test('Test Shopping', async ({ page }) => {
   //Mua hàng
   await page.goto(url);
 
-  await page.locator(`a[data-product_id="169"]`).click();
-  await page.locator(`a[data-product_id="170"]`).click();
+//   await page.locator(`a[data-product_id="169"]`).click();
+//   await page.locator(`a[data-product_id="170"]`).click();
 
-
-//   await page.locator('a[href="/shop/?add-to-cart=169"]').click();
-//   await page.locator('a[href="/shop/?add-to-cart=170"]').click();
+  await page.locator('a[href="/shop/?add-to-cart=169"]').click();
+  await page.locator('a[href="/shop/?add-to-cart=170"]').click();
   //Chờ giỏ hàng cập nhật
   await expect(page.locator('.wpmenucart-contents .amount')).not.toHaveText('₹0.00');
 
