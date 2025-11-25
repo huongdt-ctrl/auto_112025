@@ -1,0 +1,23 @@
+[
+  {
+    "description": "Người dùng hợp lệ (tomsmith)",
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!",
+    "expectedSuccess": true,
+    "expectedMessage": "You logged into a secure area!"
+  },
+  {
+    "description": "Mật khẩu không hợp lệ",
+    "username": "tomsmith",
+    "password": "wrongpassword",
+    "expectedSuccess": false,
+    "expectedMessage": "Your username is invalid!"
+  },
+  {
+    "description": "Tên người dùng không tồn tại",
+    "username": "nonexistent",
+    "password": "SuperSecretPassword!",
+    "expectedSuccess": false,
+    "expectedMessage": "Your username is invalid!"
+  }
+]
