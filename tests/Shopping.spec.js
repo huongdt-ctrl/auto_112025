@@ -23,7 +23,7 @@ test('Test Shopping', async ({ page }) => {
 
   //Chờ bảng giỏ hàng xuất hiện
   await page.waitForSelector('table.shop_table');
-
+aaaa
 
 //  //Kiểm tra sản phẩm 2
   await expect(
